@@ -1,0 +1,42 @@
+[ {
+  "placement" : "PARCEL",
+  "racks_installed" : "4",
+  "spaces" : "0",
+  "racks" : "TO BE INSTALLED SOON",
+  "location_name" : "John Muir and Skyline Blvd (Fort Funston, main lot)",
+  "status_description" : "N/A",
+  "status" : "IN_PROGRESS",
+  "yr_installed" : "2014",
+  "status_detail" : "UPCOMING_INSTALLATION",
+  "installed_by_2" : "NPS",
+  "yr_inst" : "None",
+  "acting_agent" : "NPS",
+  "action" : "5. INSTALL_BIKE_PARKING",
+  "bike_parking" : "RACK",
+  "coordinates" : {
+    "needs_recoding" : false,
+    "longitude" : "-122.500339",
+    "latitude" : "37.718951"
+  }
+}
+, {
+  "placement" : "PARCEL",
+  "racks_installed" : "0",
+  "spaces" : "0",
+  "racks" : "TO BE INSTALLED SOON",
+  "location_name" : "Polo Field",
+  "status_description" : "N/A",
+  "status" : "IN_PROGRESS",
+  "yr_installed" : "2013",
+  "status_detail" : "UPCOMING_INSTALLATION",
+  "installed_by_2" : "Rec & Park",
+  "yr_inst" : "None",
+  "acting_agent" : "REC & PARK",
+  "action" : "5. INSTALL_BIKE_PARKING",
+  "bike_parking" : "RACK",
+  "coordinates" : {
+    "needs_recoding" : false,
+    "longitude" : "-122.49246",
+    "latitude" : "37.76827"
+  }
+}]

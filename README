@@ -1,0 +1,49 @@
+
+Bicycle Parking
+===============
+
+Description
+-----------
+
+
+
+Author
+------
+
+    Alexander Dementsov, dexity@gmail.com
+
+
+Technology
+----------
+
+Front-end
+~~~~~~~~~
+
+    * Bootstrap 3.1.1
+    * Underscore.js 1.6.0
+    * Backbone.js 1.0.0
+    * jQuery 1.11.0
+    * jQuery.tmpl 1.0.4
+    * json2.js 2014-02-04
+
+Back-end
+~~~~~~~~
+
+    * Flask 0.10.1
+    * Flask-SQLAlchemy 1.0
+    * GeoAlchemy2 0.2.3
+    * Flask-Script 0.6.7
+    * PostgreSQL 9.1
+    * PostGIS 2.1.1
+    * Psycopg2 2.5.2
+    * Nose 1.3.0
+
+Run Application
+---------------
+
+    $ # Set up database and user for PostgreSQL
+    $ pip install -r requirements.txt
+    $ python manage.py init_db
+    $ python manage.py load_datasf
+    $ nosetests
+    $ python server.py

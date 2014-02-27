@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bicycle Parking</title>
+        <link href="/app/static/lib/bootstrap.min.css" rel="stylesheet" type=text/css>
+        <link href="/app/static/css/bp.css" rel="stylesheet" type=text/css>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Bicycle Parking</h3>
+            <div class="row">
+                <div class="col-xs-10">
+                    <div class="description">
+                    The application finds the nearest available parking spot for your bike.
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <button class="btn btn-success pull-right" id="parkme">Park Me</button>
+                </div>
+            </div>
+            <br>
+            <div id="parking-map" class="clearfix"></div>
+            <br>
+            <div class="alert alert-danger hide" id="error"></div>
+            <div id="directions" class="hide">
+                <p class="pull-right" id="total"></p>
+                <h4>Directions</h4>
+                <table class="table table-striped" >
+                    <thead>
+                        <tr>
+                            <th>Step</th>
+                            <th>Direction</th>
+                            <th>Distance</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script type="text/template" id="total-tmpl">
+            <div>
+                Total time: <b>${total_duration}</b>; Total distance: <b>${total_distance}</b>
+            </div>
+        </script>
+        <script type="text/template" id="info-tmpl">
+            <div>
+                <p><b>${location_name}</b></p>
+                <div>Type: ${bike_parking} &nbsp; Status: ${status}</div>
+                Agent: ${acting_agent}
+            </div>
+        </script>
+        <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key={{api_key}}&libraries=geometry&sensor=false">
+        </script>
+        <script src="/app/static/lib/json2.js"></script>
+        <script src="/app/static/lib/jquery.min.js"></script>
+        <script src="/app/static/lib/jquery.tmpl.js"></script>
+        <script src="/app/static/lib/underscore-min.js"></script>
+        <script src="/app/static/lib/backbone-min.js"></script>
+        <script src="/app/static/js/map.js"></script>
+        <script src="/app/static/js/models.js"></script>
+        <script src="/app/static/js/views.js"></script>
+    </body>
+</html>

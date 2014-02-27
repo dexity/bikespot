@@ -1,0 +1,18 @@
+
+body .container {
+    max-width: 600px;
+}
+
+#parking-map {
+    height: 300px;
+}
+
+.description {
+    padding: 8px 15px 7px;
+    display: block;
+    word-wrap: break-word;
+    background-color: #f5f7fa;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
