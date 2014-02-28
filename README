@@ -5,26 +5,13 @@ Bicycle Parking
 Description
 -----------
 
-BikeSpot is the application which helps to find the nearest bicycle parking using open DataSF for San Francisco, CA
-(http://data.sfgov.org/resource/w969-5mn4.json). The application presents the Google map with the current user
-location and neighboring bicycle parking spots. Clicking the "Park Me" the application tries to find the
-directions for the nearest parking and display the trajectory on the map step by step.
+BikeSpot is the application which helps to find the nearest bicycle parking using open DataSF for San Francisco, CA (http://data.sfgov.org/resource/w969-5mn4.json). The application presents the Google map with the current user location and neighboring bicycle parking spots. Clicking the "Park Me" the application tries to find the directions for the nearest parking and display the trajectory on the map step by step.
 
-The DataSF data contain parking locations and some metadata related to the parking. The service doesn't
-have geolocation API so it makes it hard to use them directly to find the nearest location. In order to
-add geolocation feature I loaded the data to the PostgreSQL database with PostGIS module. For every
-current location it used the PostGIS algorithms to find the nearest parking.
+The DataSF data contain parking locations and some metadata related to the parking. The service doesn't have geolocation API so it makes it hard to use them directly to find the nearest location. In order to add geolocation feature I loaded the data to the PostgreSQL database with PostGIS module. For every current location it used the PostGIS algorithms to find the nearest parking.
 
-To visualize the parking locations I used the Google Maps Javascript API v3 library which allows to make
-requests directly to the Google Maps API from the browser and display the necessary data. The directions
-trajectory uses Google Directions API and has more tricky implementation. The requests to the
-Directions API are performed by the server and the trajectory polylines returned upon AJAX requests.
-Please see the architecture in the source code.
+To visualize the parking locations I used the Google Maps Javascript API v3 library which allows to make requests directly to the Google Maps API from the browser and display the necessary data. The directions trajectory uses Google Directions API and has more tricky implementation. The requests to the Directions API are performed by the server and the trajectory polylines returned upon AJAX requests. Please see the architecture in the source code.
 
-For client MVC I used backbone.js which allows to create collection of directions and render them
-as a table of directions and display trajectory on the map. The current user location is
-detected based on Geolocation browser feature. If user doesn't accept the geolocation request, the
-default current location will be displayed.
+For client MVC I used backbone.js which allows to create collection of directions and render them as a table of directions and display trajectory on the map. The current user location is detected based on Geolocation browser feature. If user doesn't accept the geolocation request, the default current location will be displayed.
 
 
 Author
